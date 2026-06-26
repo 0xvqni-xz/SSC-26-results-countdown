@@ -33,3 +33,21 @@ document.getElementById("minutes").innerHTML=minutes;
 document.getElementById("seconds").innerHTML=seconds;
 
 },1000);
+
+const newsBtn = document.getElementById("newsBtn");
+const popup = document.getElementById("newsPopup");
+const closePopup = document.getElementById("closePopup");
+
+newsBtn.onclick = () => {
+    popup.style.display = "block";
+};
+
+closePopup.onclick = () => {
+    popup.style.display = "none";
+};
+
+const guessBtn = document.getElementById("guessBtn");
+
+guessBtn.onclick = () => {
+    window.location.href = "YOUR_RICKROLL_LINK";
+};
